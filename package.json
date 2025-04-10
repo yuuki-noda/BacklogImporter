@@ -1,0 +1,25 @@
+{
+  "name": "backlog_api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "get_wikis": "./node_modules/.bin/ts-node ./src/wiki/getWikis.ts",
+    "get_wikis_detail": "./node_modules/.bin/ts-node ./src/wiki/getWikisDetail.ts",
+    "get_wikis_attachments": "./node_modules/.bin/ts-node ./src/getWikisAttachments.ts",
+    "create_markdown": "npx ts-node ./src/wiki/createMarkdown.ts",
+    "get_tickets": "npx ts-node ./src/issue/getTicket.ts",
+    "get_tickets_attachments": "npx ts-node ./src/issue/getTicketsAttachments.ts",
+    "post_issues_attachments": "npx ts-node ./src/issue/postIssuesAttachments.ts",
+    "post_issues": "npx ts-node ./src/issue/postIssues.ts"
+  },
+  "author": "yuki.noda",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "dotenv": "^16.4.7",
+    "fs-extra": "^11.3.0",
+    "node-filelist": "^1.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
